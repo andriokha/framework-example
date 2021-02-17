@@ -1,19 +1,29 @@
+/* See https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 header{
-    padding:30px;
+    padding: 2rem;
 }
+
 main{
-    width:calc(75% - 60px);
-    float:left;
-    padding:30px;
-}
-aside{
-    width: calc(25% - 60px);
+    width: 75%;
     float: left;
-    border-left: none;
-    padding:30px;
+    padding: 2rem;
 }
+
+aside{
+    width: 25%;
+    float: left;
+    padding: 2rem;
+}
+
 footer{
-    clear:both;
-    padding:30px;
+    clear: both;
+    padding: 2rem;
     text-align: center;
 }
